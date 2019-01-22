@@ -80,101 +80,101 @@ tablespace USERS
   );
 -- Add comments to the columns 
 comment on column MEDIA.id_bas
-  is 'ID_BAS (он же MEDCODE в связках) - первичный ключ таблицы MEDIA';
+  is 'ID_BAS (РѕРЅ Р¶Рµ MEDCODE РІ СЃРІСЏР·РєР°С…) - РїРµСЂРІРёС‡РЅС‹Р№ РєР»СЋС‡ С‚Р°Р±Р»РёС†С‹ MEDIA';
 comment on column MEDIA.img
-  is 'Изображение в виде иконки';
+  is 'РР·РѕР±СЂР°Р¶РµРЅРёРµ РІ РІРёРґРµ РёРєРѕРЅРєРё';
 comment on column MEDIA.filename
-  is 'Имя файла без пути и расширения';
+  is 'РРјСЏ С„Р°Р№Р»Р° Р±РµР· РїСѓС‚Рё Рё СЂР°СЃС€РёСЂРµРЅРёСЏ';
 comment on column MEDIA.ext
-  is 'Расширение файла (вместе с точкой)';
+  is 'Р Р°СЃС€РёСЂРµРЅРёРµ С„Р°Р№Р»Р° (РІРјРµСЃС‚Рµ СЃ С‚РѕС‡РєРѕР№)';
 comment on column MEDIA.source_file
-  is 'Исходный файл с изображением';
+  is 'РСЃС…РѕРґРЅС‹Р№ С„Р°Р№Р» СЃ РёР·РѕР±СЂР°Р¶РµРЅРёРµРј';
 comment on column MEDIA.filecdate
-  is 'Время создания изображения';
+  is 'Р’СЂРµРјСЏ СЃРѕР·РґР°РЅРёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ';
 comment on column MEDIA.filemdate
-  is 'Дата исходного файла';
+  is 'Р”Р°С‚Р° РёСЃС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°';
 comment on column MEDIA.filecsum
-  is 'Контрольная сумма файла';
+  is 'РљРѕРЅС‚СЂРѕР»СЊРЅР°СЏ СЃСѓРјРјР° С„Р°Р№Р»Р°';
 comment on column MEDIA.filesize
-  is 'Длина файла';
+  is 'Р”Р»РёРЅР° С„Р°Р№Р»Р°';
 comment on column MEDIA.server_id
-  is '"Сервер" для хранения изображений';
+  is '"РЎРµСЂРІРµСЂ" РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РёР·РѕР±СЂР°Р¶РµРЅРёР№';
 comment on column MEDIA.name
-  is 'Название изображения (для человека)';
+  is 'РќР°Р·РІР°РЅРёРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ (РґР»СЏ С‡РµР»РѕРІРµРєР°)';
 comment on column MEDIA.type
-  is 'Тип хранимой информации';
+  is 'РўРёРї С…СЂР°РЅРёРјРѕР№ РёРЅС„РѕСЂРјР°С†РёРё';
 comment on column MEDIA.pyramida
-  is 'Пирамида (1) или НЕТ (0) (для изображений)';
+  is 'РџРёСЂР°РјРёРґР° (1) РёР»Рё РќР•Рў (0) (РґР»СЏ РёР·РѕР±СЂР°Р¶РµРЅРёР№)';
 comment on column MEDIA.status
-  is 'Статус: (STATUS=1 + PYRAMIDA=0) = исх. изобр.; (STATUS=1 + PYRAMIDA=1) = конвертированная пирамида(без исх. изобр.); STATUS=2 =пирамида; STATUS=3 =аудио/видео; STATUS=4 = документы';
+  is 'РЎС‚Р°С‚СѓСЃ: (STATUS=1 + PYRAMIDA=0) = РёСЃС…. РёР·РѕР±СЂ.; (STATUS=1 + PYRAMIDA=1) = РєРѕРЅРІРµСЂС‚РёСЂРѕРІР°РЅРЅР°СЏ РїРёСЂР°РјРёРґР°(Р±РµР· РёСЃС…. РёР·РѕР±СЂ.); STATUS=2 =РїРёСЂР°РјРёРґР°; STATUS=3 =Р°СѓРґРёРѕ/РІРёРґРµРѕ; STATUS=4 = РґРѕРєСѓРјРµРЅС‚С‹';
 comment on column MEDIA.idkluch
-  is 'Список ключевых слов';
+  is 'РЎРїРёСЃРѕРє РєР»СЋС‡РµРІС‹С… СЃР»РѕРІ';
 comment on column MEDIA.width
-  is 'Кол-во точек по X';
+  is 'РљРѕР»-РІРѕ С‚РѕС‡РµРє РїРѕ X';
 comment on column MEDIA.height
-  is 'Кол-во точек по Y';
+  is 'РљРѕР»-РІРѕ С‚РѕС‡РµРє РїРѕ Y';
 comment on column MEDIA.resolution
-  is 'Разрешение';
+  is 'Р Р°Р·СЂРµС€РµРЅРёРµ';
 comment on column MEDIA.eq_make
-  is 'Производитель камеры';
+  is 'РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ РєР°РјРµСЂС‹';
 comment on column MEDIA.eq_model
-  is 'Модель камеры';
+  is 'РњРѕРґРµР»СЊ РєР°РјРµСЂС‹';
 comment on column MEDIA.d_date
-  is 'Дата сьемки';
+  is 'Р”Р°С‚Р° СЃСЊРµРјРєРё';
 comment on column MEDIA.d_time
-  is 'Время сьемки';
+  is 'Р’СЂРµРјСЏ СЃСЊРµРјРєРё';
 comment on column MEDIA.exposure
-  is 'Выдержка';
+  is 'Р’С‹РґРµСЂР¶РєР°';
 comment on column MEDIA.expo_prg
-  is 'Программа';
+  is 'РџСЂРѕРіСЂР°РјРјР°';
 comment on column MEDIA.fnumber
-  is 'Диафрагма';
+  is 'Р”РёР°С„СЂР°РіРјР°';
 comment on column MEDIA.focal
-  is 'Фокусное растояние';
+  is 'Р¤РѕРєСѓСЃРЅРѕРµ СЂР°СЃС‚РѕСЏРЅРёРµ';
 comment on column MEDIA.iso_number
-  is 'Чувствительность по ISO';
+  is 'Р§СѓРІСЃС‚РІРёС‚РµР»СЊРЅРѕСЃС‚СЊ РїРѕ ISO';
 comment on column MEDIA.flash
-  is 'Вспышка';
+  is 'Р’СЃРїС‹С€РєР°';
 comment on column MEDIA.exif
-  is 'Получено из Exif (1) или НЕТ (0)';
+  is 'РџРѕР»СѓС‡РµРЅРѕ РёР· Exif (1) РёР»Рё РќР•Рў (0)';
 comment on column MEDIA.hash_pyramida
-  is 'Имеет пирамиду';
+  is 'РРјРµРµС‚ РїРёСЂР°РјРёРґСѓ';
 comment on column MEDIA.allnames
-  is 'Название изображения (для человека) (вероятно был вариант полное название, но там тоже что в NAME почти всегда).';
+  is 'РќР°Р·РІР°РЅРёРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ (РґР»СЏ С‡РµР»РѕРІРµРєР°) (РІРµСЂРѕСЏС‚РЅРѕ Р±С‹Р» РІР°СЂРёР°РЅС‚ РїРѕР»РЅРѕРµ РЅР°Р·РІР°РЅРёРµ, РЅРѕ С‚Р°Рј С‚РѕР¶Рµ С‡С‚Рѕ РІ NAME РїРѕС‡С‚Рё РІСЃРµРіРґР°).';
 comment on column MEDIA.levels
-  is 'Кол-во уровней в пирамиде';
+  is 'РљРѕР»-РІРѕ СѓСЂРѕРІРЅРµР№ РІ РїРёСЂР°РјРёРґРµ';
 comment on column MEDIA.filesize2
-  is 'Размер файла';
+  is 'Р Р°Р·РјРµСЂ С„Р°Р№Р»Р°';
 comment on column MEDIA.filemtime
-  is 'Время исходного файла';
+  is 'Р’СЂРµРјСЏ РёСЃС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°';
 comment on column MEDIA.cd_jpeg
-  is 'Номер (название) CD-диска с JPEG';
+  is 'РќРѕРјРµСЂ (РЅР°Р·РІР°РЅРёРµ) CD-РґРёСЃРєР° СЃ JPEG';
 comment on column MEDIA.cd_tiff
-  is 'Номер (название) CD-диска с TIFF';
+  is 'РќРѕРјРµСЂ (РЅР°Р·РІР°РЅРёРµ) CD-РґРёСЃРєР° СЃ TIFF';
 comment on column MEDIA.creat
-  is 'Дата съемки';
+  is 'Р”Р°С‚Р° СЃСЉРµРјРєРё';
 comment on column MEDIA.pres
-  is 'Режим съемки';
+  is 'Р РµР¶РёРј СЃСЉРµРјРєРё';
 comment on column MEDIA.kluch
-  is 'Список ключевых слов';
+  is 'РЎРїРёСЃРѕРє РєР»СЋС‡РµРІС‹С… СЃР»РѕРІ';
 comment on column MEDIA.make_as_failing_image_client
-  is 'Флаг-пометка об "отсутствии изображения": клиент, поставивший такую отметку.';
+  is 'Р¤Р»Р°Рі-РїРѕРјРµС‚РєР° РѕР± "РѕС‚СЃСѓС‚СЃС‚РІРёРё РёР·РѕР±СЂР°Р¶РµРЅРёСЏ": РєР»РёРµРЅС‚, РїРѕСЃС‚Р°РІРёРІС€РёР№ С‚Р°РєСѓСЋ РѕС‚РјРµС‚РєСѓ.';
 comment on column MEDIA.make_as_failing_image_date
-  is 'Флаг-пометка об "отсутствии изображения": дата последнего проставления такой отметки.';
+  is 'Р¤Р»Р°Рі-РїРѕРјРµС‚РєР° РѕР± "РѕС‚СЃСѓС‚СЃС‚РІРёРё РёР·РѕР±СЂР°Р¶РµРЅРёСЏ": РґР°С‚Р° РїРѕСЃР»РµРґРЅРµРіРѕ РїСЂРѕСЃС‚Р°РІР»РµРЅРёСЏ С‚Р°РєРѕР№ РѕС‚РјРµС‚РєРё.';
 comment on column MEDIA.exif_xml_data
-  is 'Данные XML с EXIF информацией о файле.';
+  is 'Р”Р°РЅРЅС‹Рµ XML СЃ EXIF РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ С„Р°Р№Р»Рµ.';
 comment on column MEDIA.metadata_xml_data
-  is 'Данные XML с META информацией о файле.';
+  is 'Р”Р°РЅРЅС‹Рµ XML СЃ META РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ С„Р°Р№Р»Рµ.';
 comment on column MEDIA.mime_type
-  is 'MIME-заголовок (ТИП ФАЙЛА) для браузера';
+  is 'MIME-Р·Р°РіРѕР»РѕРІРѕРє (РўРРџ Р¤РђР™Р›Рђ) РґР»СЏ Р±СЂР°СѓР·РµСЂР°';
 comment on column MEDIA.hash_value_of_source_file
-  is 'Данные SHA1 от исходного файла для пирамид.';
+  is 'Р”Р°РЅРЅС‹Рµ SHA1 РѕС‚ РёСЃС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р° РґР»СЏ РїРёСЂР°РјРёРґ.';
 comment on column MEDIA.row_insert_module
-  is '"Модуль", вставивший запись (служебное поле)';
+  is '"РњРѕРґСѓР»СЊ", РІСЃС‚Р°РІРёРІС€РёР№ Р·Р°РїРёСЃСЊ (СЃР»СѓР¶РµР±РЅРѕРµ РїРѕР»Рµ)';
 comment on column MEDIA.row_insert_datetime
-  is 'Дата-время вставки записи (служебное поле)';
+  is 'Р”Р°С‚Р°-РІСЂРµРјСЏ РІСЃС‚Р°РІРєРё Р·Р°РїРёСЃРё (СЃР»СѓР¶РµР±РЅРѕРµ РїРѕР»Рµ)';
 comment on column MEDIA.userserv
-  is 'Виртуальный сервер';
+  is 'Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ СЃРµСЂРІРµСЂ';
 -- Create/Recreate indexes 
 create index MEDIA_1148065 on MEDIA (FILESIZE, FILECSUM)
   tablespace USERS
